@@ -5,6 +5,7 @@ app.use(express.json());
 const port = 3000;
 const banco = "senai";
 const table = "alunos_info";
+const colunas = ['matricula','cpf','nome','idade']
 
 const Connection = mysql.createConnection({
   host: "localhost",
